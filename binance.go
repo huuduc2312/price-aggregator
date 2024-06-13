@@ -70,9 +70,5 @@ func getBinanceBTCPrice() (*priceResult, error) {
 		return nil, fmt.Errorf("parse low price failed: %w", err)
 	}
 
-	open = 68600
-	high = 68600
-	low = 68600
-
 	return &priceResult{open: open, high: high, low: low}, nil
 }
